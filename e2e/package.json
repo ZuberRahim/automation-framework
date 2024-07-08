@@ -5,14 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cucumber:dev": "cucumber-js src/features/**/*.feature --tags @dev --require-module ts-node/register --require src/step-definitions/**/**/*.ts",
-    "cucumber:smoke":" ",
-    "cucumber:regression":" "
+    "cucumber:smoke": " ",
+    "cucumber:regression": " ",
+    "reports": "cucumber-js -f cucumber-pretty"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
     "playwright": "^1.45.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2"

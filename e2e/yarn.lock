@@ -49,7 +49,7 @@
   dependencies:
     regexp-match-indices "1.0.2"
 
-"@cucumber/cucumber@^10.8.0":
+"@cucumber/cucumber@^10.8.0", "@cucumber/cucumber@>=7.0.0":
   version "10.8.0"
   resolved "https://registry.npmjs.org/@cucumber/cucumber/-/cucumber-10.8.0.tgz"
   integrity sha512-o8SR6MRQVCKKw4tytWqCqOjfX4cASj9dqpdHKHMi09rZWBCNQHBwH1TO9wj7NKjOa6RfUOTcgvDlayTcjyCH4A==
@@ -132,7 +132,7 @@
   resolved "https://registry.npmjs.org/@cucumber/message-streams/-/message-streams-4.0.1.tgz"
   integrity sha512-Kxap9uP5jD8tHUZVjTWgzxemi/0uOsbGjd4LBOSxcJoOCRbESFwemUzilJuzNTB8pcTQUh8D5oudUyxfkJOKmA==
 
-"@cucumber/messages@^24.0.0", "@cucumber/messages@>=17.1.1", "@cucumber/messages@>=18", "@cucumber/messages@>=19.1.4 <=24", "@cucumber/messages@24.1.0":
+"@cucumber/messages@*", "@cucumber/messages@^24.0.0", "@cucumber/messages@>=17.1.1", "@cucumber/messages@>=18", "@cucumber/messages@>=19.1.4 <=24", "@cucumber/messages@24.1.0":
   version "24.1.0"
   resolved "https://registry.npmjs.org/@cucumber/messages/-/messages-24.1.0.tgz"
   integrity sha512-hxVHiBurORcobhVk80I9+JkaKaNXkW6YwGOEFIh/2aO+apAN+5XJgUUWjng9NwqaQrW1sCFuawLB1AuzmBaNdQ==
@@ -141,6 +141,16 @@
     class-transformer "0.5.1"
     reflect-metadata "0.2.1"
     uuid "9.0.1"
+
+"@cucumber/pretty-formatter@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@cucumber/pretty-formatter/-/pretty-formatter-1.0.1.tgz"
+  integrity sha512-A1lU4VVP0aUWdOTmpdzvXOyEYuPtBDI0xYwYJnmoMDplzxMdhcHk86lyyvYDoMoPzzq6OkOE3isuosvUU4X7IQ==
+  dependencies:
+    ansi-styles "^5.0.0"
+    cli-table3 "^0.6.0"
+    figures "^3.2.0"
+    ts-dedent "^2.0.0"
 
 "@cucumber/tag-expressions@6.1.0":
   version "6.1.0"
@@ -272,6 +282,11 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
+ansi-styles@^5.0.0:
+  version "5.2.0"
+  resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-5.2.0.tgz"
+  integrity sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==
+
 ansi-styles@^6.1.0:
   version "6.2.1"
   resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-6.2.1.tgz"
@@ -344,7 +359,7 @@ class-transformer@0.5.1:
   resolved "https://registry.npmjs.org/class-transformer/-/class-transformer-0.5.1.tgz"
   integrity sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw==
 
-cli-table3@0.6.3:
+cli-table3@^0.6.0, cli-table3@0.6.3:
   version "0.6.3"
   resolved "https://registry.npmjs.org/cli-table3/-/cli-table3-0.6.3.tgz"
   integrity sha512-w5Jac5SykAeZJKntOxJCrm63Eg5/4dhMWIcuTbo9rpE+brgaSZo0RuNJZeOyMgsUdhDeojvgyQLmjI+K50ZGyg==
@@ -1063,6 +1078,11 @@ toposort@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/toposort/-/toposort-2.0.2.tgz"
   integrity sha512-0a5EOkAUp8D4moMi2W8ZF8jcga7BgZd91O/yabJCFY8az+XSzeGyTKs0Aoo897iV1Nj6guFq8orWDS96z91oGg==
+
+ts-dedent@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/ts-dedent/-/ts-dedent-2.2.0.tgz"
+  integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
 
 ts-node@^10.9.2:
   version "10.9.2"
