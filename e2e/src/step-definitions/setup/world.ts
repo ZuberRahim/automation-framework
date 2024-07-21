@@ -33,6 +33,7 @@ export class ScenarioWorld extends World {
         const browserType: BrowserType = playwright[automationBrowser];
         const browser = await browserType.launch({
             headless: process.env.HEADLESS !== 'false',
+            //headless: false,
             args: ['--disable-web-security', '--disable-features=isolateOrigins, site-per-process'],
         })
         return browser;

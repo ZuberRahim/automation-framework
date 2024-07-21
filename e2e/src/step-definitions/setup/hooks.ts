@@ -36,7 +36,7 @@ Before(async function(this: ScenarioWorld, scenario) {
     return ready
 })
 //Runs after every test case is executed
-// After(async (scenario) => {
+//After(async (scenario) => {
 //     const scenarioStatus = scenario.result?.status;
 //     if (scenarioStatus === 'FAILED'){
 //         await global.page.screenshot({
