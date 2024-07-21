@@ -2,6 +2,7 @@
 Playwright, Typescript, Cucumber, Automation framework. 
 
 =======
+
 Step 1: Navigate to automation-framework file and run the command "yarn start" on CLI
         - once the application starts 
 Step 2: Navigate to the e2e file
