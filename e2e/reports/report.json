@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-home-page;as-a-user-i-expect-to-be-able-to-see-contacts",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "As a user i expect to be able to see contacts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1132223300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 753515100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"header logo\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verifiy-element-visibility.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58530400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the \"contacts header\" should contain the text \"Contacts\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verifiy-element-visibility.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9131199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 184140399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-a-user-i-expect-to-be-able-to-navigate-to-the-home-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As a user i expect to be able to navigate to the home page",
+    "tags": [],
+    "uri": "src\\features\\home-page.feature"
+  }
+]

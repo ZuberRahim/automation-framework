@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "cucumber": "yarn transpile && cucumber-js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cucumber:dev": "cucumber-js src/features/**/*.feature --tags @dev --require-module ts-node/register --require src/step-definitions/**/**/*.ts",
     "cucumber:smoke": " ",
@@ -13,6 +15,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
     "@cucumber/cucumber": "^10.8.0",
     "@cucumber/pretty-formatter": "^1.0.1",
     "playwright": "^1.45.0",
